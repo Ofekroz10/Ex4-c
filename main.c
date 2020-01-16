@@ -55,7 +55,16 @@ int main(int argc, char **argv)
     char *output, *temp;
     bool done = false;
 	 char * field;
-	thire* t = newThire(REGULAR);
+     thire* t;
+     if(argc<2)
+     {
+	    t = newThire(REGULAR);
+     }
+     else
+     {
+         t = newThire(REVERSE);
+     }
+     
     output = SplitString(str, ' ');
 	field=output;
     int cnt = 1;
