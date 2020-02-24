@@ -40,7 +40,7 @@ int main(int argc, char **argv)
     char a;
     int i = 0;
     char *str =0;
-    while ((a = getchar()) != EOF && a!= '\n')
+    while ((a = getchar()) != EOF )
     {
 		if(((a>=A_UPPER && a<=Z_UPPER)|| a>=A_LOWER && a<=Z_LOWER)||a ==SPACE)
 		{
